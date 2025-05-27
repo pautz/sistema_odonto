@@ -50,9 +50,9 @@ O **sistema_odonto** foi desenvolvido para facilitar o dia a dia de clínicas e 
 
 ---
 
-### 6. Embarque Odontológico (embarque_odonto)
+### 6. Embarque Odontológico (odonto_comprovante)
 
-- No menu ou página de **embarque_odonto**, os profissionais podem realizar a validação do paciente no consultório.
+- No menu ou página de **odonto_comprovante**, os profissionais podem realizar a validação do paciente no consultório.
 - O embarque é feito por meio do QR Code apresentado pelo paciente, que contém as informações da reserva e permite confirmar o atendimento.
 - O sistema atualiza o status do paciente como "embarcado", controlando a frequência e liberando o atendimento odontológico.
 - Essa funcionalidade garante segurança, rastreabilidade e evita atendimentos duplicados ou não autorizados.

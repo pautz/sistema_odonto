@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["transacao_hash"])) {
     $transacao_hash = $_POST["transacao_hash"];
 
     // Validar reserva
-    $query_check = "SELECT r.voo_id, r.numero_dentista, r.data_reserva, r.transacao_hash, r.embarcado, r.data_embarque, i.documento
+    $query_check = "SELECT r.consultorio_id, r.numero_dentista, r.data_reserva, r.transacao_hash, r.embarcado, r.data_embarque, i.documento
                     FROM reserva_dentista r
                     JOIN identificacao i ON r.eq_user = i.username
                     WHERE r.eq_user = ? AND r.transacao_hash = ?";
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["transacao_hash"])) {
     $stmt_update->execute();
 
     // Gerar QR Code com apenas a hash
-    $url_verificacao = "https://carlitoslocacoes.com/site/emconsultorio.php?transacao_hash=" . urlencode($transacao_hash);
+    $url_verificacao = "https://carlitoslocacoes.com/site/emvoo.php?transacao_hash=" . urlencode($transacao_hash);
     $arquivo_qr = "qrcodes/qr_" . $transacao_hash . ".png";
     QRcode::png($url_verificacao, $arquivo_qr, QR_ECLEVEL_L, 6);
 
@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["transacao_hash"])) {
     $pdf->Cell(50, 10, 'Documento de Identidade:', 0, 0);
     $pdf->Cell(140, 10, $row['documento'], 0, 1);
     $pdf->Cell(50, 10, 'Voo ID:', 0, 0);
-    $pdf->Cell(140, 10, $row['voo_id'], 0, 1);
+    $pdf->Cell(140, 10, $row['consultorio_id'], 0, 1);
     $pdf->Cell(50, 10, 'Assento:', 0, 0);
     $pdf->Cell(140, 10, $row['numero_dentista'], 0, 1);
     $pdf->Cell(50, 10, 'Data Reserva:', 0, 0);

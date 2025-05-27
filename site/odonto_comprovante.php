@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["transacao_hash"])) {
     $stmt_update->execute();
 
     // Gerar QR Code com apenas a hash
-    $url_verificacao = "https://carlitoslocacoes.com/site/emvoo.php?transacao_hash=" . urlencode($transacao_hash);
+    $url_verificacao = "https://carlitoslocacoes.com/site/emconsultorio.php?transacao_hash=" . urlencode($transacao_hash);
     $arquivo_qr = "qrcodes/qr_" . $transacao_hash . ".png";
     QRcode::png($url_verificacao, $arquivo_qr, QR_ECLEVEL_L, 6);
 

@@ -42,11 +42,16 @@ if (!empty($consultorio_id)) {
     $params[] = $consultorio_id;
     $types .= "i";
 }
-if (!empty($data_reserva)) {
-    $query .= " AND r.data_reserva = ?";
-    $params[] = $data_reserva;
-    $types .= "s";
+$data_inicio = isset($_GET['data_inicio']) ? trim($_GET['data_inicio']) : '';
+$data_fim = isset($_GET['data_fim']) ? trim($_GET['data_fim']) : '';
+
+if (!empty($data_inicio) && !empty($data_fim)) {
+    $query .= " AND r.data_reserva BETWEEN ? AND ?";
+    $params[] = $data_inicio;
+    $params[] = $data_fim;
+    $types .= "ss";
 }
+
 if (!empty($documento)) {
     $query .= " AND i.documento = ?";
     $params[] = $documento;
@@ -115,10 +120,16 @@ $cx->close();
                    value="<?= htmlspecialchars($_GET['consultorio_id'] ?? '') ?>">
         </div>
         <div class="mb-3">
-            <label for="data_reserva" class="form-label">Data da Reserva:</label>
-            <input type="date" id="data_reserva" name="data_reserva" class="form-control w-50 mx-auto"
-                   value="<?= htmlspecialchars($_GET['data_reserva'] ?? '') ?>">
-        </div>
+    <label for="data_inicio" class="form-label">Data Inicial:</label>
+    <input type="date" id="data_inicio" name="data_inicio" class="form-control w-50 mx-auto"
+           value="<?= htmlspecialchars($_GET['data_inicio'] ?? '') ?>">
+</div>
+<div class="mb-3">
+    <label for="data_fim" class="form-label">Data Final:</label>
+    <input type="date" id="data_fim" name="data_fim" class="form-control w-50 mx-auto"
+           value="<?= htmlspecialchars($_GET['data_fim'] ?? '') ?>">
+</div>
+
         <div class="mb-3">
     <label for="numero_dentista" class="form-label">Número do Assento:</label>
     <input type="text" id="numero_dentista" name="numero_dentista" class="form-control w-50 mx-auto"

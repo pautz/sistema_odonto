@@ -52,6 +52,13 @@ if (!empty($documento)) {
     $params[] = $documento;
     $types .= "s";
 }
+$numero_dentista = isset($_GET['numero_dentista']) ? trim($_GET['numero_dentista']) : '';
+
+if (!empty($numero_dentista)) {
+    $query .= " AND r.numero_dentista = ?";
+    $params[] = $numero_dentista;
+    $types .= "s";
+}
 
 $query .= " LIMIT ? OFFSET ?";
 $params[] = $por_pagina;
@@ -112,6 +119,12 @@ $cx->close();
             <input type="date" id="data_reserva" name="data_reserva" class="form-control w-50 mx-auto"
                    value="<?= htmlspecialchars($_GET['data_reserva'] ?? '') ?>">
         </div>
+        <div class="mb-3">
+    <label for="numero_dentista" class="form-label">Número do Assento:</label>
+    <input type="text" id="numero_dentista" name="numero_dentista" class="form-control w-50 mx-auto"
+           value="<?= htmlspecialchars($_GET['numero_dentista'] ?? '') ?>">
+</div>
+
         <input type="hidden" name="pagina" value="1">
         <button type="submit" class="btn btn-primary">Buscar</button>
     </form>

@@ -50,9 +50,9 @@ O **sistema_odonto** foi desenvolvido para facilitar o dia a dia de clínicas e 
 
 ---
 
-### 6. Embarque Odontológico (odonto_comprovante)
+### 6. Embarque Odontológico (embarque_odonto)
 
-- No menu ou página de **odonto_comprovante**, os profissionais podem realizar a validação do paciente no consultório.
+- No menu ou página de **embarque_odonto**, os profissionais podem realizar a validação do paciente no consultório.
 - O embarque é feito por meio do QR Code apresentado pelo paciente, que contém as informações da reserva e permite confirmar o atendimento.
 - O sistema atualiza o status do paciente como "embarcado", controlando a frequência e liberando o atendimento odontológico.
 - Essa funcionalidade garante segurança, rastreabilidade e evita atendimentos duplicados ou não autorizados.
@@ -66,7 +66,15 @@ O **sistema_odonto** foi desenvolvido para facilitar o dia a dia de clínicas e 
 
 ---
 
-### 8. Observações Gerais
+### 8. Visualização Geral das Reservas (todas_reservas_odonto.php)
+
+- Acesse a página **todas_reservas_odonto.php** para visualizar um painel completo com todas as reservas realizadas no sistema.
+- Esta funcionalidade permite acompanhar o histórico, status de comparecimento, horários e demais informações relevantes, facilitando o controle administrativo.
+- Também pode ser usada para auditorias internas e geração de relatórios sobre o fluxo de pacientes e utilização dos consultórios.
+
+---
+
+### 9. Observações Gerais
 
 - Para cada ação, siga as orientações exibidas nas telas do sistema.
 - O sistema foi projetado para garantir segurança, rastreabilidade e organização do atendimento odontológico.

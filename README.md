@@ -1,4 +1,4 @@
-# sistema_odonto (sistema no .rar) (baixe o sistema odonto2 para não precisar de pagamento)
+# sistema_odonto (sistema no .rar) (Baixe o sistema odonto2 que é sem metamask)
 
 ## Passo a Passo para Utilização do Sistema Odontológico
 

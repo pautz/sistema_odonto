@@ -8,17 +8,6 @@ O **sistema_odonto** foi desenvolvido para facilitar o dia a dia de clínicas e 
 # sistema_odonto (sistema no .rar) (Baixe o sistema odonto2 que é sem metamask)
 
 ## Passo a Passo para Utilização do Sistema Odontológico
-
-- [1. Login](#1-login)
-- [2. Cadastro de Consultórios e Especialidades](#2-cadastro-de-consultórios-e-especialidades)
-- [3. Agendamento de Consultas](#3-agendamento-de-consultas)
-- [4. Emissão de Comprovante](#4-emissão-de-comprovante)
-- [5. Check-in do Paciente (Embarque)](#5-check-in-do-paciente-embarque)
-- [6. Embarque Odontológico (embarque_odonto)](#6-embarque-odontológico-embarque_odonto)
-- [7. Consulta de Reservas](#7-consulta-de-reservas)
-- [8. Visualização Geral das Reservas (todas_reservas_odonto.php)](#8-visualização-geral-das-reservas-todas_reservas_odontophp)
-- [9. Observações Gerais](#9-observações-gerais)
-
 ---
 
 ### 1. Login

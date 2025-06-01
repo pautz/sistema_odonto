@@ -60,7 +60,7 @@ Acesse pelo link: https://carlitoslocacoes.com/odonto2/site/odonto_consultar.php
 - O sistema gerará automaticamente um page id, copie-o.
 
 ### 5. Emissão de Comprovante
-Acesse pelo link: [[https://carlitoslocacoes.com/odonto2/site/comprovantes.php](https://carlitoslocacoes.com/odonto2/site/comprovantes.php)](https://carlitoslocacoes.com/odonto2/site/odonto_comprovante.php)
+Acesse pelo link: https://carlitoslocacoes.com/odonto2/site/odonto_comprovante.php
 
 - Após a acessar minhas consultas, acesse a área de comprovantes.
 - Cole o page id da consulta.

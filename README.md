@@ -30,7 +30,7 @@ Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/login.php](https://
 ---
 
 ### 2. Cadastro de Consultórios e Especialidades
-Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/cadastro_consultorio.php](https://carlitoslocacoes.com/odonto2/site/cadastro_consultorio.php)
+Acesse pelo link: https://carlitoslocacoes.com/odonto2/site3/cadastro_produto/cadastro_consultorioadmin.php
 
 - No menu "Cadastro de Consultório", informe:
   - Tipo de consulta (Ex: Clínica Geral, Ortodontia, etc.)
@@ -44,7 +44,7 @@ Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/cadastro_consultori
 ---
 
 ### 3. Agendamento de Consultas
-Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/horarios_disponiveis.php](https://carlitoslocacoes.com/odonto2/site/horarios_disponiveis.php)
+Acesse pelo link: https://carlitoslocacoes.com/odonto2/site2/nossasmaquinas/horarios_odonto.php
 
 - No menu "Horários Disponíveis", pesquise por especialidade, horário ou dentista.
 - Selecione o consultório e horário desejados.
@@ -53,43 +53,35 @@ Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/horarios_disponivei
 
 ---
 
-### 4. Emissão de Comprovante
-Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/comprovantes.php](https://carlitoslocacoes.com/odonto2/site/comprovantes.php)
+### 4. Minhas Consultas e Page ID
+Acesse pelo link: https://carlitoslocacoes.com/odonto2/site/odonto_consultar.php
 
-- Após a reserva, acesse a área de comprovantes.
+- Após a reserva, acesse a área minhas consultas.
+- O sistema gerará automaticamente um page id, copie-o.
+
+### 5. Emissão de Comprovante
+Acesse pelo link: [[https://carlitoslocacoes.com/odonto2/site/comprovantes.php](https://carlitoslocacoes.com/odonto2/site/comprovantes.php)](https://carlitoslocacoes.com/odonto2/site/odonto_comprovante.php)
+
+- Após a acessar minhas consultas, acesse a área de comprovantes.
+- Cole o page id da consulta.
 - O sistema gerará automaticamente um PDF personalizado com QR Code para o paciente.
 - Este comprovante pode ser apresentado na recepção para agilizar o atendimento.
 
 ---
 
-### 5. Check-in do Paciente (Embarque)
-Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/checkin.php](https://carlitoslocacoes.com/odonto2/site/checkin.php)
+### 6. Check-in do Paciente (Embarque)
+Acesso pelo link: https://carlitoslocacoes.com/odonto2/site/emconsultorio.php
 
-- Na chegada do paciente, utilize o leitor de QR Code para validar a reserva.
+- Na chegada do paciente, utilize o leitor de QR Code para validar a consulta.
 - O sistema registra o comparecimento do paciente, garantindo controle de presença e histórico.
-
----
-
-### 6. Embarque Odontológico (embarque_odonto)
-Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/embarque_odonto.php](https://carlitoslocacoes.com/odonto2/site/embarque_odonto.php)
-
-- No menu ou página de **embarque_odonto**, os profissionais podem realizar a validação do paciente no consultório.
 - O embarque é feito por meio do QR Code apresentado pelo paciente, que contém as informações da reserva e permite confirmar o atendimento.
 - O sistema atualiza o status do paciente como "embarcado", controlando a frequência e liberando o atendimento odontológico.
 - Essa funcionalidade garante segurança, rastreabilidade e evita atendimentos duplicados ou não autorizados.
 
 ---
 
-### 7. Consulta de Reservas
-Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/consultar_reservas.php](https://carlitoslocacoes.com/odonto2/site/consultar_reservas.php)
-
-- Profissionais e secretárias podem consultar reservas por data, especialidade, dentista ou nome do paciente.
-- Utilize filtros para localizar rapidamente informações sobre agendamentos passados ou futuros.
-
----
-
-### 8. Visualização Geral das Reservas (todas_reservas_odonto.php)
-Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/todas_reservas_odonto.php](https://carlitoslocacoes.com/odonto2/site/todas_reservas_odonto.php)
+### 7. Visualização Geral das Reservas (todas_reservas_odonto.php)
+Acesse pelo link: https://carlitoslocacoes.com/odonto2/site/todas_reservas_odonto.php
 
 - Acesse a página **todas_reservas_odonto.php** para visualizar um painel completo com todas as reservas realizadas no sistema.
 - Esta funcionalidade permite acompanhar o histórico, status de comparecimento, horários e demais informações relevantes, facilitando o controle administrativo.
@@ -97,7 +89,7 @@ Acesse pelo link: [https://carlitoslocacoes.com/odonto2/site/todas_reservas_odon
 
 ---
 
-### 9. Observações Gerais
+### 8. Observações Gerais
 
 - Para cada ação, siga as orientações exibidas nas telas do sistema.
 - O sistema foi projetado para garantir segurança, rastreabilidade e organização do atendimento odontológico.
